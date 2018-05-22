@@ -51,7 +51,7 @@ Tree.prototype.changeRoot = function(name, id, type, configOpt) {
 
 var tree = new Tree(new DataOfNode("root", 1, null, null));
 var req = new XMLHttpRequest();
-req.open('GET', 'http://gptl.ru/api/map/public/maps.json');
+req.open('GET', 'https://gptl.ru/api/map/public/maps.json');
 req.onload = function() {
 	var data = JSON.parse(req.responseText);
 	var start = data[0].templates[0];
